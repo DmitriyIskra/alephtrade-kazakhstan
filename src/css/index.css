@@ -1,0 +1,125 @@
+
+
+/* ----------======== START СТАТЬИ С ИЗОБРАЖЕНИЯМИ =======---------- */
+
+.main-page__article-item {
+    display: flex;
+    height: 20.83vw;
+}
+
+.main-page__article-item:nth-child(2n) > .main-page__article-img {
+    order: 2;
+}
+
+.main-page__article-img {
+    width: 50%;
+}
+
+.main-page__article-img_tea {
+    background: no-repeat url('../img/main-page-article-img-tea.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.main-page__article-img_coffee {
+    background: no-repeat url('../img/main-page-article-img-coffee.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.main-page__article-img_equipment {
+    background: no-repeat url('../img/main-page-article-img-equipment.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.main-page__article-img_syrups {
+    background: no-repeat url('../img/main-page-article-img-syrups.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.main-page__article-img_training {
+    background: no-repeat url('../img/main-page-article-img-training.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.main-page__article-img_service {
+    background: no-repeat url('../img/main-page-article-img-service.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.main-page__article {
+    padding-top: 1.30vw;
+}
+
+.main-page__article-item:nth-child(1n) .main-page__article {
+    width: 50%;
+    padding-right: 4.8vw;
+    padding-left: 1.6vw;
+}
+
+.main-page__article-item:nth-child(2n) .main-page__article {
+    width: 50%;
+    padding-right: 1.6vw;
+    padding-left: 4.8vw;
+}
+
+.main-page__article-title {
+    font-size: 1.67vw;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: #555;
+}
+
+.main-page__wr-article-text {
+    margin-top: 0.42vw;
+
+    font-size: 0.8vw;
+    font-weight: 400;
+
+    color: #494949;
+}
+
+.main-page__article-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.10vw;
+}
+
+.main-page__article-text-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.10vw;
+}
+
+.main-page__article-text-item::before {
+    content: "";
+
+    display: inline-block;
+    height: 0.21vw;
+    width: 0.21vw;
+    margin-right: 0.42vw;
+    margin-bottom: 0.2vw;
+
+    background-color: #494949;
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+
+.main-page__wr-article-link  {
+    margin-top: 1.04vw;
+    width: fit-content;
+}
+
+.main-page__article-link > svg {
+    display: block;
+    height: 2.08vw;
+    width: 2.23vw;
+}
+
+/* ----------======== END СТАТЬИ С ИЗОБРАЖЕНИЯМИ =======---------- */
