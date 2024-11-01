@@ -53,6 +53,8 @@
 
 .main-page__article {
     padding-top: 1.30vw;
+
+    background: #fff;
 }
 
 .main-page__article-item:nth-child(1n) .main-page__article {
@@ -123,3 +125,51 @@
 }
 
 /* ----------======== END СТАТЬИ С ИЗОБРАЖЕНИЯМИ =======---------- */
+
+
+/* ----------======== START О НАС =======---------- */
+
+.main-page__paralax {
+    display: grid;
+    padding-top: 6.88vw;
+    padding-bottom: 9.01vw;
+    place-items: center;
+}
+
+.main-page__about-us {
+    width: 63.06%;
+    padding-top: 2.40vw;
+    padding-bottom: 7.03vw;
+
+    border-radius: 0.52vw;
+    background: rgba(255, 255, 255, 0.80);
+}
+
+.main-page__title-about-us {
+    font-size: 1.67vw;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #555;
+}
+
+.main-page__wr-text-about-us {
+    margin-top: 0.78vw;
+}
+
+.main-page__text-about-us {
+    display: flex;
+    width: 82.25%;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 1.4vw;
+
+    font-size: 1.04vw;
+    font-weight: 400;
+    text-align: center;
+
+    color: #494949;
+}
+
+/* ----------======== END О НАС =======---------- */

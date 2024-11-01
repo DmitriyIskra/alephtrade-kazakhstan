@@ -1,0 +1,6 @@
+.wrapper-main {
+    background: no-repeat url('../img/paralax-about-us.webp');
+    background-position: left bottom;
+    background-size: 100% auto;
+    background-attachment: fixed;
+}

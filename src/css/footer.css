@@ -14,7 +14,7 @@ footer {
 .footer__wrapper {
     display: grid;
     grid-template-columns: max-content max-content 1fr;
-    grid-template-rows: repeat(3, min-content);
+    grid-template-rows: repeat(4, min-content);
 }
 
 .footer__title {
@@ -47,9 +47,9 @@ footer {
 
 .footer__line {
     height: 0.10vw;
-    width: 96.27%;
+    width: 96.27%; 
     grid-column: 1/4;
-    grid-row: 2;
+    grid-row: 2; 
 
     background: #C6C6C6;
 }
@@ -61,13 +61,13 @@ footer {
 .footer__links-list-assortment {
     padding-left: var(--column-padding-first);
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 3/5;
 }
 
 .footer__links-list-solution {
     padding-left: var(--column-padding-second);
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 3/5;
 }
 
 .footer__links-list-service {
@@ -82,3 +82,102 @@ footer {
 
     color: #C5C5C5;
 }
+
+
+/* ----------======== START FORM =======---------- */
+
+.footer__wr-subscription {
+    grid-column: 3;
+    grid-row: 4;
+    padding-left: var(--column-padding-third);
+}
+
+.footer__form-label {
+    display: inline-block;
+    width: 77%;
+
+    font-size: 1.04vw;
+    font-weight: 400;
+
+    color: #DFDFDF;
+}
+
+.footer__wr-form-elements {
+    margin-top: 1.04vw;
+}
+
+.footer__wr-form-elements {
+    display: flex;
+    gap: 0.47vw;
+    align-items: center;
+}
+
+.footer__input {
+    height: 2.60vw;
+    width: 15.57vw;
+    padding: 0 0.26vw;
+
+    font-size: 0.94vw;
+    font-weight: 400;
+
+    color: #494949;
+    border-radius: 0.52vw;
+    border: 1px solid #00F38D;
+    background: #E1E1E1;
+    caret-color: #494949;
+}
+
+.footer__input:focus {
+    outline: none;
+}
+
+.footer__input::placeholder {
+    font-size: 0.57vw;
+    font-weight: 400;
+
+    color: #C0C0C0;
+    transform: translateY(35%);
+}
+
+.footer__input:focus::placeholder {
+    visibility: hidden;
+}
+
+.footer__button {
+    width: 11.46vw;
+    height: 2.29vw;
+
+    font-size: 0.83vw;
+    font-weight: 400;
+
+    color: #FFF;
+    border-radius: 0.52vw;
+    background: linear-gradient(90deg, #00F38D 0%, #009EFF 100%);
+    box-shadow: 
+        2.03vw 3.33vw 1.09vw 0px rgba(0, 0, 0, 0.00), 
+        1.30vw 2.14vw 0.99vw 0px rgba(0, 0, 0, 0.03), 
+        0.73vw 1.20vw 0.83vw 0px rgba(0, 0, 0, 0.10), 
+        0.31vw 0.52vw 0.63vw 0px rgba(0, 0, 0, 0.17), 
+        0.10vw 0.16vw 0.36vw 0px rgba(0, 0, 0, 0.20)
+    ;
+
+    cursor: pointer;
+}
+
+/* ----------======== END FORM =======---------- */
+
+/* ----------======== START SOCIAL =======---------- */
+
+.footer__social-list {
+    display: flex;
+    gap: 1.20vw;
+}
+
+.footer__social-item {
+    position: relative;
+
+    height: 1.61vw;
+    width: 1.61vw;
+}
+
+/* ----------======== END SOCIAL =======---------- */
