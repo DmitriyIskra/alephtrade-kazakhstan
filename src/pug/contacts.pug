@@ -1,0 +1,89 @@
+extends layout/layout
+
+
+block  variable
+    - let pageTitle = 'Контакты';
+    - let pageName = 'contacts'; 
+
+    include mixines/breadcrumbs
+
+    - 
+        let crumbsdata = [
+            {
+                path: './index.html',
+                title: 'Главная',
+            },
+            {
+                path: '#0',
+                title: 'Контакты',
+            }
+        ]
+
+    
+
+
+block content
+    main.main.contacts-page
+        
+        .contacts-page__wr-crumbsdata
+            +breadcrumbs(crumbsdata)
+        
+        .contacts-page__wr-title 
+            .contacts-page__title-line
+            h2.contacts-page__title главный офис
+            .contacts-page__title-line
+        
+        .contacts-page__contact-data
+            .contacts-page__wr-address
+                p.contacts-page__address
+                    span ТОО "Хот Дринкс Лаб"
+                    span 050012, Казахстан, г. Алматы, Алмалинский р-он,
+                    span ул. Шарипова А., здание 92, офис 30
+
+            ul.contacts-page__contacts-list
+                li.contacts-page__contacts-item.contacts-page__contacts-phone_i.contacts-page__contacts-icon
+                    a.contacts-page__contacts-link-icon(href="tel:+77770432314" target="_blank" title="phone") 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31" fill="none">
+                        <circle cx="15.5" cy="15.5" r="14.5" stroke="#555555" stroke-width="2"/>
+                        <path d="M22.6207 18.037C22.5297 17.888 22.2893 17.798 21.9287 17.619C21.5673 17.44 19.792 16.573 19.462 16.454C19.131 16.3347 18.8897 16.2747 18.6493 16.633C18.409 16.9917 17.717 17.798 17.506 18.037C17.2953 18.2767 17.085 18.3067 16.7237 18.1273C16.363 17.9483 15.2 17.5697 13.821 16.3497C12.748 15.4003 12.0233 14.2283 11.8127 13.8693C11.6023 13.511 11.7907 13.3173 11.971 13.139C12.1337 12.9783 12.3323 12.7207 12.5127 12.5117C12.6937 12.3023 12.7537 12.1533 12.8733 11.914C12.9943 11.675 12.934 11.466 12.8433 11.2863C12.7533 11.1073 12.0307 9.34467 11.73 8.62733C11.4293 7.91067 11.129 8.03 10.918 8.03C10.7077 8.03 10.4667 8 10.226 8C9.98533 8 9.594 8.08967 9.263 8.448C8.93233 8.80667 8 9.67333 8 11.4357C8 13.1983 9.293 14.9013 9.474 15.14C9.65433 15.3787 11.9707 19.1133 15.6407 20.5477C19.311 21.9813 19.311 21.503 19.973 21.443C20.6343 21.3833 22.1083 20.5767 22.4103 19.7407C22.7103 18.9033 22.7103 18.1863 22.6207 18.037Z" fill="#555555"/>
+                    </svg>
+                li.contacts-page__contacts-item.contacts-page__contacts-telegram.contacts-page__contacts-icon
+                    a.contacts-page__contacts-link-icon(href="https://t.me/+77770432314" target="_blank" title="telegram") 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none">
+                        <g clip-path="url(#clip0_32_1617)">
+                            <path d="M23.3992 9.4L5.19922 15.7L11.4992 17.8M23.3992 9.4L11.4992 17.8M23.3992 9.4L17.7992 24.1L11.4992 17.8" stroke="#555555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 29C22.7319 29 29 22.7319 29 15C29 7.26801 22.7319 1 15 1C7.26801 1 1 7.26801 1 15C1 22.7319 7.26801 29 15 29Z" stroke="#555555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_32_1617">
+                                <rect width="30" height="30" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                li.contacts-page__contacts-item.contacts-page__contacts-whatsapp.contacts-page__contacts-icon
+                    a.contacts-page__contacts-link-icon(href="https://api.whatsapp.com/send/?phone=77770432314" target="_blank" title="whatsapp") 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none">
+                        <g clip-path="url(#clip0_32_1621)">
+                            <path d="M30 14.6137C30 22.6847 23.407 29.2273 15.2727 29.2273C12.6903 29.2273 10.2643 28.5673 8.15367 27.409L0 30L2.65833 22.1593C1.31733 19.9573 0.545 17.3747 0.545 14.6137C0.545 6.54267 7.13867 0 15.2727 0C23.4077 0 30 6.54267 30 14.6137ZM15.2727 2.32733C8.44467 2.32733 2.89067 7.839 2.89067 14.6137C2.89067 17.302 3.767 19.7917 5.24933 21.817L3.70233 26.38L8.46067 24.8677C10.4157 26.1513 12.7577 26.9 15.273 26.9C22.1 26.9 27.655 21.389 27.655 14.6143C27.655 7.83967 22.1003 2.32733 15.2727 2.32733ZM22.7097 17.9793C22.6187 17.8303 22.3783 17.7403 22.0177 17.5613C21.6563 17.3823 19.881 16.5153 19.551 16.3963C19.22 16.277 18.9787 16.217 18.7383 16.5753C18.498 16.934 17.806 17.7403 17.595 17.9793C17.3843 18.219 17.174 18.249 16.8127 18.0697C16.452 17.8907 15.289 17.512 13.91 16.292C12.837 15.3427 12.1123 14.1707 11.9017 13.8117C11.6913 13.4533 11.8797 13.2597 12.06 13.0813C12.2227 12.9207 12.4213 12.663 12.6017 12.454C12.7827 12.2447 12.8427 12.0957 12.9623 11.8563C13.0833 11.6173 13.023 11.4083 12.9323 11.2287C12.8423 11.0497 12.1197 9.287 11.819 8.56967C11.5183 7.853 11.218 7.97233 11.007 7.97233C10.7967 7.97233 10.5557 7.94233 10.315 7.94233C10.0743 7.94233 9.683 8.032 9.352 8.39033C9.02133 8.749 8.089 9.61567 8.089 11.378C8.089 13.1407 9.382 14.8437 9.563 15.0823C9.74333 15.321 12.0597 19.0557 15.7297 20.49C19.4 21.9237 19.4 21.4453 20.062 21.3853C20.7233 21.3257 22.1973 20.519 22.4993 19.683C22.7993 18.8457 22.7993 18.1287 22.7097 17.9793Z" fill="#555555"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_32_1621">
+                                <rect width="30" height="30" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                li.contacts-page__contacts-item.contacts-page__contacts-phone_t
+                    a.contacts-page__contacts-link-text(href="tel:+77770432314" target="_blank" title="phone") +7 777 043 23 14
+                li.contacts-page__contacts-item.contacts-page__contacts-email_i.contacts-page__contacts-icon
+                    a.contacts-page__contacts-link-icon(href="mailto:info@hdlab.kz" target="_blank" title="email")
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31" fill="none">
+                        <path d="M11.3418 13.4377L15.6833 16.4768L20.0249 13.4377" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 20.384V11.701C7 10.7419 7.77751 9.96436 8.73661 9.96436H22.6295C23.5887 9.96436 24.3661 10.7419 24.3661 11.701V20.384C24.3661 21.3432 23.5887 22.1207 22.6295 22.1207H8.73661C7.77751 22.1207 7 21.3432 7 20.384Z" stroke="#555555" stroke-width="1.5"/>
+                        <circle cx="15.5" cy="15.5" r="14.5" stroke="#555555" stroke-width="2"/>
+                    </svg>
+                li.contacts-page__contacts-item.contacts-page__contacts-email_t
+                    a.contacts-page__contacts-link-text(href="mailto:info@hdlab.kz" target="_blank" title="email") info@hdlab.kz
+        
+        .contacts-page__map
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A206abffd457191c482c1a5e779b8f08b5660e3fa7a582ed2562792f23bd2c046&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+        

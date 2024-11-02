@@ -1,5 +1,6 @@
 block  variable
 
+
 doctype html
 html(lang='ru')
   head
@@ -13,8 +14,7 @@ html(lang='ru')
     title #{pageTitle}
   body
     .wrapper-page(class=`wrapper-${pageName}`) 
-        header.header
-            h1 HEADER
+        include ../components/header
 
         block content 
 

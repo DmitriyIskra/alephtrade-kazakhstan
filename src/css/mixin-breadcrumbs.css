@@ -1,0 +1,19 @@
+.breadcrumbs__list {
+    display: flex;
+    gap: 0.26vw;
+}
+
+.breadcrumbs__item:not(:first-child)::before {
+    content: '/';
+
+    display: inline-block;
+}
+
+.breadcrumbs__link {
+    font-size: 0.63vw;
+    font-weight: 400;
+}
+
+.breadcrumbs__link:last-child {
+    font-weight: 700;
+}

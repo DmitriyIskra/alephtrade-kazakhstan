@@ -1,0 +1,129 @@
+.contacts-page {
+    padding-right: 4.95vw;
+    padding-bottom: 12.76vw;
+    padding-left: 4.95vw;
+}
+
+.contacts-page__wr-crumbsdata {
+    padding-top: 1.25vw;
+}
+
+.contacts-page__wr-title {
+    display: flex;
+    margin-top: 5.26vw;
+    gap: 2.34vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-page__title-line {
+    height: 0.10vw;
+    width: 11.7%;
+
+    background-color: #2A8E57;
+}
+
+.contacts-page__title {
+    font-size: 1.67vw;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    color: #555;
+}
+
+.contacts-page__contact-data {
+    display: flex;
+    gap: 10%;
+    margin-top: 3.65vw;
+    justify-content: center;
+}
+
+.contacts-page__address {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1.04vw;
+    font-weight: 400;
+
+    color: #555;
+}
+
+.contacts-page__address > span:first-child {
+    font-weight: 700;
+}
+
+.contacts-page__contacts-list {
+    display: grid;
+    grid-template-columns: repeat(3, min-content) 1fr;
+    grid-template-rows: repeat(2, min-content);
+    column-gap: 0.52vw;
+    row-gap: 0.68vw;
+    align-items: center;
+}
+
+.contacts-page__contacts-item {
+    position: relative;
+}
+
+.contacts-page__contacts-phone_i {
+    grid-row: 1;
+    grid-column: 1;
+}
+.contacts-page__contacts-telegram {
+    grid-row: 1;
+    grid-column: 2;
+}
+.contacts-page__contacts-whatsapp {
+    grid-row: 1;
+    grid-column: 3;
+}
+.contacts-page__contacts-phone_t {
+    grid-row: 1;
+    grid-column: 4;
+
+    white-space: nowrap;
+}
+.contacts-page__contacts-email_i {
+    grid-row: 2;
+    grid-column: 3;
+}
+.contacts-page__contacts-email_t {
+    grid-row: 2;
+    grid-column: 4;
+
+    white-space: nowrap;
+}
+
+.contacts-page__contacts-icon {
+    height: 1.67vw;
+    width: 1.67vw;
+}
+
+.contacts-page__contacts-link-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+}
+
+.contacts-page__contacts-link-text {
+    font-size: 1.04vw;
+    font-weight: 400;
+
+    color: #555;
+}
+
+.contacts-page__map_mob {
+    display: none;
+}
+
+.contacts-page__map {
+    height: 37.50vw;
+    margin-top: 2.60vw;
+
+    box-shadow: -0.26vw 0.21vw 0.63vw 0px rgba(0, 0, 0, 0.25);
+}
+
+

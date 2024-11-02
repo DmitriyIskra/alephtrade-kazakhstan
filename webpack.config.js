@@ -88,6 +88,18 @@ module.exports = {
         new miniCss({
             filename: 'css/style.css',
         }),
+        new HtmlWebPackPlugin({
+            // title: '....' // здесь можно указать title конкретной страницы
+            template: './src/pug/contacts.pug',
+            filename: './contacts.html',   // куда компилировать
+            // minify: {
+            //   html: false // отключаем минификацию html, еще есть версия minify: false
+            // },
+            scriptLoading: 'blocking', // defer | module. можно также указать inject: 'body' скрипт будет в конце body но с defer
+        }),
+        new miniCss({
+            filename: 'css/style.css',
+        }),
         // new CopyWebpackPlugin({
         //   patterns: [  
             

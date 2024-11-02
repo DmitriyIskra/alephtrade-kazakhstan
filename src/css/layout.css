@@ -4,3 +4,10 @@
     background-size: 100% auto;
     background-attachment: fixed;
 }
+
+@media(max-width: 961px) {
+    .wrapper-main {
+        background-position: center bottom;
+        background-size: 238% auto;
+    }
+}
