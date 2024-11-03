@@ -1,5 +1,23 @@
 
 
+/* ----------======== START SLIDER BRANDS =======---------- */
+
+.main-page__brands {
+    height: 13.85vw;
+
+    background-color: #fff;
+}
+
+.brands__image {
+    height: 100%;
+    width: 100%;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+/* ----------======== START SLIDER BRANDS =======---------- */
+
 /* ----------======== START СТАТЬИ С ИЗОБРАЖЕНИЯМИ =======---------- */
 
 .main-page__article-item {
@@ -173,3 +191,113 @@
 }
 
 /* ----------======== END О НАС =======---------- */
+
+
+
+
+@media(max-width: 961px) {
+    .main-page__article-item {
+        height: initial;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 961px) {
+    .main-page__article-img {
+        width: 100%;
+        height: 51.47vw;
+    }
+
+    .main-page__article-item:nth-child(2n) > .main-page__article-img {
+        order: initial;
+    }
+}
+
+@media(max-width: 961px) {
+    .main-page__article-item:nth-child(1n) .main-page__article {
+        width: initial;
+        padding-right: 6.13vw;
+        padding-left: 6.13vw;
+    }
+
+    .main-page__article {
+        padding: 5.33vw 6.13vw 13.33vw 6.13vw;
+    }
+}
+
+@media(max-width: 961px) {
+    .main-page__article-title {
+        font-size: 6.40vw;
+        text-align: center;
+    }
+}
+
+@media(max-width: 961px) {
+    .main-page__wr-article-text {
+        margin-top: 4vw;
+        font-size: 3.73vw;
+        text-align: center;
+    }
+}
+
+@media(max-width: 961px) {
+    .main-page__article-text {
+        gap: 5.10vw;
+    }
+}
+
+@media(max-width: 961px) {
+    .main-page__wr-article-link {
+        display: flex;
+        width: 100%;
+        margin-top: 4vw;
+        justify-content: flex-end;
+    }
+}
+
+@media(max-width: 961px) {
+    .main-page__article-link > svg {
+        height: 10.93vw;
+        width: 10.93vw;
+    }
+}
+
+@media(max-width: 961px) {
+    .main-page__paralax {
+        padding-top: 13.07vw;
+        padding-bottom: 27.47vw;
+    }
+}
+
+@media(max-width: 961px) {
+    .main-page__about-us {
+        width: 87.74%;
+        padding-top: 7.73vw;
+        padding-bottom: 13.87vw;
+
+        border-radius: 2.67vw;
+    }
+}
+
+@media(max-width: 961px) {
+    .main-page__title-about-us {
+        font-size: 6.40vw;
+    }
+}
+
+@media(max-width: 961px) {
+    .main-page__wr-text-about-us {
+        margin-top: 4.53vw;
+    }
+}
+
+@media(max-width: 961px) {
+    .main-page__text-about-us {
+        width: 97.26%;
+        gap: 4.4vw;
+
+        font-size: 3.73vw;
+    }
+}
+
+

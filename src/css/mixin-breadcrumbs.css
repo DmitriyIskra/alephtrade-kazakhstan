@@ -1,7 +1,7 @@
 .breadcrumbs__list {
     display: flex;
     gap: 0.26vw;
-}
+} 
 
 .breadcrumbs__item:not(:first-child)::before {
     content: '/';
@@ -17,3 +17,16 @@
 .breadcrumbs__link:last-child {
     font-weight: 700;
 }
+
+@media(max-width: 961px) {
+    .breadcrumbs__list {
+        gap: 1.07vw;
+    }
+}
+
+@media(max-width: 961px) {
+    .breadcrumbs__link {
+        font-size: 2.67vw;
+    }
+}
+

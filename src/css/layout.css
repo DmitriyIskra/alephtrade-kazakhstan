@@ -11,3 +11,10 @@
         background-size: 238% auto;
     }
 }
+
+@media(max-width: 480px) {
+    .wrapper-main {
+        background-position: center bottom;
+        background-size: 278% auto;
+    }
+}
