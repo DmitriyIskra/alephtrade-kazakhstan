@@ -1,11 +1,74 @@
+/* ----------======== START SLIDER BRANDS =======---------- */
 
+.main-page__slider-banners {
+    width: 100%;
+
+    background-color: #fff;
+}
+
+.slider-banners-slide {
+    height: 33vw;
+}
+
+.slider-banners__image {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.slider-banners__button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    width: 15%;
+
+    transition: opacity 0.15s linear;
+    
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+
+.slider-banners__button:hover {
+    opacity: 1;
+}
+
+.slider-banners__button-prev {
+    left: 0;
+    
+    background-image: url('../img/icons/arrow-sl-prev-icon.png'), linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+    background-size: 9% auto, auto;
+}
+
+.slider-banners__button-next {
+    right: 0;
+
+    background-image: url('../img/icons/arrow-sl-next-icon.png'), linear-gradient(to left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+    background-size: 9% auto, auto;
+}
+
+/* ----------======== END SLIDER BRANDS =======---------- */
 
 /* ----------======== START SLIDER BRANDS =======---------- */
 
-.main-page__brands {
+.main-page__slider-brands {
+    background-color: #fff;
+}
+
+.brands {
+    height: 100%;
+}
+
+.brands__slide {
     height: 13.85vw;
 
-    background-color: #fff;
 }
 
 .brands__image {
@@ -16,7 +79,7 @@
     object-position: center;
 }
 
-/* ----------======== START SLIDER BRANDS =======---------- */
+/* ----------======== END SLIDER BRANDS =======---------- */
 
 /* ----------======== START СТАТЬИ С ИЗОБРАЖЕНИЯМИ =======---------- */
 
@@ -194,6 +257,26 @@
 
 
 
+
+@media(max-width: 961px) {
+    .slider-banners-slide {
+        height: 69.07vw;
+    }
+}
+
+@media(max-width: 961px) {
+    .slider-banners__button {
+        display: none;
+    }
+}
+
+
+
+@media(max-width: 961px) {
+    .brands__slide {
+        height: 26.93vw;
+    }
+}
 
 @media(max-width: 961px) {
     .main-page__article-item {

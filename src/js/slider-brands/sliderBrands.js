@@ -14,7 +14,6 @@ export default function sliderBrands(Swiper, slider, modules) {
             // when window width is >= 320px
             320: {
               slidesPerView: 4,
-              spaceBetween: 20
             },
             // when window width is >= 961px
             640: {

@@ -5,7 +5,26 @@ block  variable
 
 block content
     main.main.main-page
-        .main-page__brands 
+        .main-page__slider-banners
+            .swiper.slider-banners
+                //- Additional required wrapper
+                .swiper-wrapper
+                    //- Slides
+                    .swiper-slide.slider-banners-slide
+                        img.slider-banners__image(src=require("../img/content/slider-althaus_2024_2160x720-content.webp") alt="althaus")
+                    .swiper-slide.slider-banners-slide
+                        img.slider-banners__image(src=require("../img/content/slider-wmf_2024_2160x720-content.webp") alt="wmf")
+                    .swiper-slide.slider-banners-slide
+                        img.slider-banners__image(src=require("../img/content/slider-rancilio_2024_2160x720-content.webp") alt="rancilio")
+                    .swiper-slide.slider-banners-slide
+                        img.slider-banners__image(src=require("../img/content/slider-niktea_2024_2160x720-content.webp") alt="niktea")
+
+                //- If we need navigation buttons
+                .slider-banners__button.slider-banners__button-prev
+                .slider-banners__button.slider-banners__button-next
+
+
+        .main-page__slider-brands 
             .swiper.brands
                 .swiper-wrapper.brands-wrapper
                     .swiper-slide.brands__slide
