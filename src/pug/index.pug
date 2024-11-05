@@ -11,13 +11,25 @@ block content
                 .swiper-wrapper
                     //- Slides
                     .swiper-slide.slider-banners-slide
-                        img.slider-banners__image(src=require("../img/content/slider-althaus_2024_2160x720-content.webp") alt="althaus")
+                        picture
+                            source.slider-banners__image(srcset=require("../img/content/slider-wmf_mobile-content.webp") media="(max-width: 961px)")
+                            source.slider-banners__image(srcset=require("../img/content/slider-wmf_2024_2160x720-content.webp") media="(max-width: 2000px)")
+                            img.slider-banners__image(src=require("../img/content/slider-wmf_2024_2160x720-content.webp") alt="wmf")
                     .swiper-slide.slider-banners-slide
-                        img.slider-banners__image(src=require("../img/content/slider-wmf_2024_2160x720-content.webp") alt="wmf")
+                        picture
+                            source.slider-banners__image(srcset=require("../img/content/slider-althaus_mobile-content.webp") media="(max-width: 961px)")
+                            source.slider-banners__image(srcset=require("../img/content/slider-althaus_2024_2160x720-content.webp") media="(max-width: 2000px)")
+                            img.slider-banners__image(src=require("../img/content/slider-althaus_2024_2160x720-content.webp") alt="althaus")
                     .swiper-slide.slider-banners-slide
-                        img.slider-banners__image(src=require("../img/content/slider-rancilio_2024_2160x720-content.webp") alt="rancilio")
+                        picture
+                            source.slider-banners__image(srcset=require("../img/content/slider-rancilio_mobile-content.webp") media="(max-width: 961px)")
+                            source.slider-banners__image(srcset=require("../img/content/slider-rancilio_2024_2160x720-content.webp") media="(max-width: 2000px)")
+                            img.slider-banners__image(src=require("../img/content/slider-rancilio_2024_2160x720-content.webp") alt="rancilio")
                     .swiper-slide.slider-banners-slide
-                        img.slider-banners__image(src=require("../img/content/slider-niktea_2024_2160x720-content.webp") alt="niktea")
+                        picture
+                            source.slider-banners__image(srcset=require("../img/content/slider-niktea_mobile-content.webp") media="(max-width: 961px)")
+                            source.slider-banners__image(srcset=require("../img/content/slider-niktea_2024_2160x720-content.webp") media="(max-width: 2000px)")
+                            img.slider-banners__image(src=require("../img/content/slider-niktea_2024_2160x720-content.webp") alt="niktea")
 
                 //- If we need navigation buttons
                 .slider-banners__button.slider-banners__button-prev

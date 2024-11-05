@@ -1,3 +1,94 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
     background-color: #fff;
+
+    z-index: 1000;
+} 
+
+.header__social-icon {
+    width: 1.61vw;
+    height: 1.61vw;
 }
+
+.header__social-email {
+    height: 1.35vw;
+}
+/* ----------======== START NAVIGATION =======---------- */
+
+.nav {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    gap: 2.60vw;
+}
+
+.nav__item {
+    padding-top: 1.04vw;
+    padding-bottom: 1.04vw;
+
+    font-size: 0.83vw;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: #464F4E;
+
+    cursor: pointer;
+}
+
+
+
+/* .nav__sub-list {
+    
+} */
+
+.nav__sub-item {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    visibility: hidden;
+    padding-top: 2.19vw;
+    padding-bottom: 5.73vw;
+
+    background: rgba(255, 255, 255, 0.80);
+    box-shadow:
+     120px 390px 114px 0px rgba(0, 0, 0, 0.00),
+      77px 250px 104px 0px rgba(0, 0, 0, 0.01),
+       43px 140px 88px 0px rgba(0, 0, 0, 0.05),
+       19px 62px 65px 0px rgba(0, 0, 0, 0.09),
+        5px 16px 36px 0px rgba(0, 0, 0, 0.10);
+
+    transition: opacity 0.15s linear;
+
+    transform: translateY(100%);
+
+    opacity: 0;
+}
+
+.nav__sub-item:hover {
+    visibility: visible;
+
+    opacity: 1;
+}
+
+
+.nav__item-assortment:hover ~ .nav__sub-item-assortment {
+    visibility: visible;
+
+    opacity: 1;
+}
+.nav__item-solutions:hover ~ .nav__sub-item-solutions {
+    visibility: visible;
+
+    opacity: 1;
+}
+
+
+
+/* ----------======== END NAVIGATION =======---------- */
