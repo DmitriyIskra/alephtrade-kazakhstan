@@ -7,6 +7,8 @@
     content: '/';
 
     display: inline-block;
+    font-size: 0.63vw;
+    font-weight: 400;
 }
 
 .breadcrumbs__link {

@@ -2,8 +2,9 @@ header.header
     .header__wrapper
         .header__tel 
             a(href="tel:+77770432314") +7 (777) 043-23-14
-        .header__logo 
-            img(src=require('../../img/logo.webp') alt="")
+        .header__logo
+            img(src=require('../../img/logo.webp') alt="логотип")
+            a(href="/" title="Главная") 
         .header__wr-social 
             .header__social-icon.header__social-email
                 a.header__social-link(href="mailto:info@hdlab.kz" title="email" target="_blank")
@@ -46,21 +47,137 @@ header.header
                 </svg>
 
     nav.nav.header__nav-desctop
-        //- ul.nav__list 
-        //-     li.nav__item  
-        //-         a(href="#assortment") НАШ АССОРТИМЕНТ
-        //- .nav__sub-list
-        //-     #assortment.nav__sub-item ndkfvndkvbnjdfb
-        //-         a(href="#0") close 
+
 
         //- Пункты меню
         .nav__item.nav__item-assortment наш ассортимент
         .nav__item.nav__item-solutions решения для бизнеса
-        .nav__item.nav__item-contacts услуги / сервис
+        .nav__item.nav__item-service услуги / сервис
         .nav__item.nav__item-video видео
         .nav__item
             a(href="./contacts.html") контакты
         //- Подменю
-        .nav__sub-item.nav__sub-item-assortment НАШ АССОРТИМЕНТ НАШ АССОРТИМЕНТ НАШ АССОРТИМЕНТ
-        .nav__sub-item.nav__sub-item-solutions solutionssolutionssolutionssolutionssolutionssolutionssolutions
-           
+        .nav__sub-item.nav__sub-item-assortment 
+            ul.nav__content-list 
+                li.nav__content-item 
+                    .nav__sub-wr-title 
+                        a.nav__sub-title(href="#0" title="" rel="nofollow noopener") Коллекция чая
+                    ul.nav__sub-link-list
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") #[span althaus]
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") #[span althaus] Limited Leaf
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") #[span niktea]
+                li.nav__content-item 
+                    .nav__sub-wr-title 
+                        a.nav__sub-title(href="#0" title="" rel="nofollow noopener") Кофе и шоколад
+                    ul.nav__sub-link-list
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Impassion
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Lavazza
+                li.nav__content-item 
+                    .nav__sub-wr-title 
+                        a.nav__sub-title(href="#0" title="" rel="nofollow noopener") Сиропы
+                    ul.nav__sub-link-list
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Vedrenne
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Sweet Shot
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Monin
+                li.nav__content-item 
+                    .nav__sub-wr-title 
+                        a.nav__sub-title(href="#0" title="" rel="nofollow noopener") Холодные напитки
+                    ul.nav__sub-link-list
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Молоко
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Сок
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Вода
+                li.nav__content-item 
+                    .nav__sub-wr-title 
+                        a.nav__sub-title(href="#0" title="" rel="nofollow noopener") Посуда
+                    ul.nav__sub-link-list
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Посуда WMF
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Аксессуары #[br] бариста
+                li.nav__content-item 
+                    .nav__sub-wr-title 
+                        a.nav__sub-title(href="#0" title="" rel="nofollow noopener") Кофейное оборудование
+                    ul.nav__sub-link-list
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Суперавтоматические кофемашины
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Традиционные кофемашины
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Фильтр-кофемашины
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Кофемолки
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Бойлеры
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Дополнительное оборудование
+                        li.nav__sub-link-item 
+                            a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Водоподготовка
+
+        .nav__sub-item.nav__sub-item-solutions 
+            ul.nav__content-list 
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Отель
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Room-service
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Ресторан
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Лобби-бар
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Бар/Кафе
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") АЗС
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Кофейня
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Офис
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Шведский стол
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Fast food
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Конференция / кофе-брейк
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") SPA
+        .nav__sub-item.nav__sub-item-service 
+            ul.nav__content-list 
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Обучение
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Аренда
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Инструкции
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Сертификаты
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Заказать дегустацию
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Техническое обслуживание
+            
+        .nav__sub-item.nav__sub-item-video 
+            ul.nav__content-list 
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Мероприятия
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Наше производство
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Обучающие материалы
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Тренингцентр Lavazza
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Вопрос-ответ
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Наша продукция
+                li.nav__content-item
+                    a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Рецепты напитков 
