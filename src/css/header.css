@@ -1,8 +1,5 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative;
 
     background-color: #fff;
 
@@ -25,7 +22,10 @@
     display: flex;
     justify-content: center;
     gap: 2.60vw;
-}
+
+    border-bottom: .15vw solid #18663B;
+}    
+
 
 .nav__item {
     padding-top: 1.04vw;
@@ -36,11 +36,17 @@
     text-transform: uppercase;
 
     color: #464F4E;
-
+    
     cursor: pointer;
 }
 
-
+.nav__item:hover {
+    text-decoration: underline;
+    text-decoration-color: #464F4E;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0.1vw;
+    text-underline-position: under;
+}
 
 /* .nav__sub-list {
     
