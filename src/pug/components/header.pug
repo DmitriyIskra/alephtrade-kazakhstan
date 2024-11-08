@@ -1,9 +1,10 @@
-input#switcher-mob(type="checkbox")
+
 header.header
     .header__wrapper
         .header__tel.header__tel_desctop
             a(href="tel:+77770432314" title="phone") +7 (777) 043-23-14
         .header__switcher-mobile   
+            input#switcher-mob(type="checkbox")
             label.header__switcher-label(for="switcher-mob")
         .header__logo
             img(src=require('../../img/logo.webp') alt="логотип")
@@ -187,72 +188,97 @@ header.header
                     a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Наша продукция
                 li.nav__content-item
                     a.nav__sub-link(href="#0" title="" rel="nofollow noopener") Рецепты напитков 
-
-ul.nav__mobile-list
+//- 1-й уровень
+.nav__mobile-list
+    //- 
     .nav__mobile-item
-        a(href="#0") наш ассортимент
-        ul.nav__mobile-sub-list
-            .nav__mobile-sub-item 
-                .nav__mobile-sub-title Коллекция чая
-                ul#nav__mobile-link-service.nav__mobile-link-list
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") #[span althaus]
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") #[span althaus] Limited Leaf
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") #[span niktea]
-            .nav__mobile-sub-item
-                .nav__mobile-sub-title Кофе и шоколад
-                ul#nav__mobile-link-service.nav__mobile-link-list
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Impassion
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Lavazza
-            .nav__mobile-sub-item
-                .nav__mobile-sub-title Сиропы
-                ul#nav__mobile-link-service.nav__mobile-link-list
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Vedrenne
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Sweet Shot
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Monin
-            .nav__mobile-sub-item
-                .nav__mobile-sub-title Холодные напитки
-                ul#nav__mobile-link-service.nav__mobile-link-list
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Молоко
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Сок
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Вода
-            .nav__mobile-sub-item
-                .nav__mobile-sub-title Посуда
-                ul#nav__mobile-link-service.nav__mobile-link-list
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Посуда WMF
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Аксессуары бариста
-            .nav__mobile-sub-item
-                .nav__mobile-sub-title Кофейное оборудование
-                ul#nav__mobile-link-service.nav__mobile-link-list
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Суперавтоматические кофемашины
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Традиционные кофемашины
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Фильтр-кофемашины
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Кофемолки
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Бойлеры
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Дополнительное оборудование
-                    .nav__mobile-link-item
-                        a(href="#0" title="" rel="nofollow noopener") Водоподготовка
+        label.nav__mobile-item-title(for="nav__mobile-link-assortment") наш ассортимент
+        input#nav__assortment(type="checkbox")
+    //- 2-йуровень
+    .nav__mobile-sub-list
+        //- 
+        .nav__mobile-sub-item 
+            label.nav__mobile-sub-title(for="nav__collection-tea") Коллекция чая
+            input#nav__collection-tea(type="checkbox")
+        //- 3-й уровень
+        .nav__mobile-link-list
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") #[span althaus]
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") #[span althaus] Limited Leaf
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") #[span niktea]
+        //- 
+        .nav__mobile-sub-item
+            label.nav__mobile-sub-title(for="nav__coffee-chocolate") Кофе и шоколад
+            input#nav__coffee-chocolate(type="checkbox")
+        //- 3-й уровень
+        .nav__mobile-link-list
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Impassion
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Lavazza
+        //- 
+        .nav__mobile-sub-item
+            label.nav__mobile-sub-title(for="nav__syrups") Сиропы
+            input#nav__syrups(type="checkbox")
+        //- 3-й уровень
+        .nav__mobile-link-list
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Vedrenne
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Sweet Shot
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Monin
+        //- 
+        .nav__mobile-sub-item
+            label.nav__mobile-sub-title(for="nav__cold-drinks") Холодные напитки
+            input#nav__cold-drinks(type="checkbox")
+        //- 3-й уровень
+        .nav__mobile-link-list
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Молоко
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Сок
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Вода
+        //- 
+        .nav__mobile-sub-item
+            label.nav__mobile-sub-title(for="nav__dishes") Посуда
+            input#nav__dishes(type="checkbox")
+        //- 3-й уровень
+        .nav__mobile-link-list
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Посуда WMF
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Аксессуары бариста
+        //- 
+        .nav__mobile-sub-item
+            label.nav__mobile-sub-title(for="nav__coffee-equipment") Кофейное оборудование
+            input#nav__coffee-equipment(type="checkbox")
+        //- 3-й уровень
+        .nav__mobile-link-list
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Суперавтоматические кофемашины
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Традиционные кофемашины
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Фильтр-кофемашины
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Кофемолки
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Бойлеры
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Дополнительное оборудование
+            .nav__mobile-link-item
+                a(href="#0" title="" rel="nofollow noopener") Водоподготовка
+    
+    //- 
     .nav__mobile-item
-        a(href="#nav__mobile-link-solutions")  решения для бизнеса
-        ul#nav__mobile-link-solutions.nav__mobile-link-list
+        label.nav__mobile-item-title(for="nav__solutions") решения для бизнеса
+        input#nav__solutions(type="checkbox")
+    //- 2-й уровень
+    .nav__mobile-link-list
             .nav__mobile-link-item
                 a(href="#0" title="" rel="nofollow noopener") Отель
             .nav__mobile-link-item
@@ -277,37 +303,44 @@ ul.nav__mobile-list
                 a(href="#0" title="" rel="nofollow noopener") Конференция / кофе-брейк
             .nav__mobile-link-item
                 a(href="#0" title="" rel="nofollow noopener") SPA
+    
     .nav__mobile-item
-        a(href="#nav__mobile-link-service") услуги / сервис
-        ul#nav__mobile-link-service.nav__mobile-link-list
-            .nav__mobile-link-item
-                a(href="#0" title="" rel="nofollow noopener") Обучение
-            .nav__mobile-link-item
-                a(href="#0" title="" rel="nofollow noopener") Аренда
-            .nav__mobile-link-item
-                a(href="#0" title="" rel="nofollow noopener") Инструкции
-            .nav__mobile-link-item
-                a(href="#0" title="" rel="nofollow noopener") Сертификаты
-            .nav__mobile-link-item
-                a(href="#0" title="" rel="nofollow noopener") Заказать дегустацию
-            .nav__mobile-link-item
-                a(href="#0" title="" rel="nofollow noopener") Техническое обслуживание
+        label.nav__mobile-item-title(for="nav__service") услуги / сервис
+        input#nav__service(type="checkbox")
+    .nav__mobile-link-list
+        .nav__mobile-link-item
+            a(href="#0" title="" rel="nofollow noopener") Обучение
+        .nav__mobile-link-item
+            a(href="#0" title="" rel="nofollow noopener") Аренда
+        .nav__mobile-link-item
+            a(href="#0" title="" rel="nofollow noopener") Инструкции
+        .nav__mobile-link-item
+            a(href="#0" title="" rel="nofollow noopener") Сертификаты
+        .nav__mobile-link-item
+            a(href="#0" title="" rel="nofollow noopener") Заказать дегустацию
+        .nav__mobile-link-item
+            a(href="#0" title="" rel="nofollow noopener") Техническое обслуживание
+    
+    //- 
     .nav__mobile-item
-        a(href="#nav__mobile-link-video") видео
-        ul#nav__mobile-link-video.nav__mobile-link-list
-            .nav__mobile-link-item
-                a(href="#0" title="" rel="nofollow noopener") Мероприятия
-            .nav__mobile-link-item
-                a(href="#0" title="" rel="nofollow noopener") Наше производство
-            .nav__mobile-link-item
-                a(href="#0" title="" rel="nofollow noopener") Обучающие материалы
-            .nav__mobile-link-item
-                a(href="#0" title="" rel="nofollow noopener") Тренингцентр Lavazza
-            .nav__mobile-link-item
-                a(href="#0" title="" rel="nofollow noopener") Вопрос-ответ
-            .nav__mobile-link-item
-                a(href="#0" title="" rel="nofollow noopener") Наша продукция
-            .nav__mobile-link-item
-                a(href="#0" title="" rel="nofollow noopener") Рецепты напитков
+        label.nav__mobile-item-title(for="nav__video") видео
+        input#nav__video(type="checkbox")
+    //- 2-й уровень
+    .nav__mobile-link-list
+        .nav__mobile-link-item
+            a(href="#0" title="" rel="nofollow noopener") Мероприятия
+        .nav__mobile-link-item
+            a(href="#0" title="" rel="nofollow noopener") Наше производство
+        .nav__mobile-link-item
+            a(href="#0" title="" rel="nofollow noopener") Обучающие материалы
+        .nav__mobile-link-item
+            a(href="#0" title="" rel="nofollow noopener") Тренингцентр Lavazza
+        .nav__mobile-link-item
+            a(href="#0" title="" rel="nofollow noopener") Вопрос-ответ
+        .nav__mobile-link-item
+            a(href="#0" title="" rel="nofollow noopener") Наша продукция
+        .nav__mobile-link-item
+            a(href="#0" title="" rel="nofollow noopener") Рецепты напитков
+    
     .nav__mobile-item
-        a(href="#0") контакты
+        a(href="./contacts.html") контакты
