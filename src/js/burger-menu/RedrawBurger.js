@@ -27,11 +27,11 @@ export default class RedrawBurger {
 
     closeNav() {
         [...this.itemsFirst].forEach(item => item.classList.remove('nav__item_open'));
-        if(this.activeSecondsItems) {
-            [...this.activeSecondsItems].forEach(item => item.classList.remove('nav__item_open'));
+        if(this.activeSecondBox && this.activeSecondsItems) {
+            this.closeSecond();
         }
-        if(this.activeFirdItems) {
-            [...this.activeSecondsItems].forEach(item => item.classList.remove('nav__item_open'));
+        if(this.activeThirdBox && this.activeThirdItems) {
+            this.closeThird();
         }
     }
     // Конец открытие закрытие меню
@@ -40,7 +40,7 @@ export default class RedrawBurger {
     controllSecond(checkbox) {
         const parent = checkbox.parentElement;
         const state = checkbox.checked;
-
+        
         // ни одно подменю не открыто
         if(state && !this.activeSecondBox) this.openSecond(parent);
         // одно подменю открыто
@@ -60,6 +60,7 @@ export default class RedrawBurger {
         const secondNav = parent.nextElementSibling;
 
         this.activeSecondsItems = secondNav.querySelectorAll('.nav__mobile-sub_second');
+        
         [...this.activeSecondsItems].forEach(item => {
             item.classList.add('nav__item_open');
         })
@@ -70,13 +71,59 @@ export default class RedrawBurger {
             item.classList.remove('nav__item_open');
         })
 
-        this.activeSecondBox = null;
+        this.activeSecondsItems = null;
+        this.activeSecondBox.checked = false;
         this.activeSecondBox = null;
 
-        // НУЖНО ПРОВЕРЯТЬ ТРЕТИЙ УРОВЕНЬ ОТДЕЛЬНЫЙ МЕТОД НАПИСАТЬ
+        // Проверяем есть ли открытый третий уровень
+        if(this.activeThirdItems && this.activeThirdBox) {
+            this.closeThird();
+        }
     }
     // Конец открытие закрытие подменю 2 уровня
     // -------------------------------------------------------------------------
+    // Начало открытие закрытие подменю 3 уровня
+    controllThird(checkbox) {
+        const parent = checkbox.parentElement;
+        const state = checkbox.checked;
+        
+        // ни одно подменю не открыто
+        if(state && !this.activeThirdBox) this.openThird(parent);
+        // одно подменю открыто
+        if(state && this.activeThirdBox) {
+            this.closeThird();
+            this.openThird(parent)
+        };
+
+        this.activeThirdBox = checkbox; // в закрытии обнуляет и/или здесь переприсваивает когда true
+        
+        // закрытие 
+        if(!state) this.closeThird();
+
+    }
+
+    openThird(parent) {
+        const thirdNav = parent.nextElementSibling;
+
+        this.activeThirdItems = thirdNav.querySelectorAll('.nav__mobile-link-item');
+        
+        [...this.activeThirdItems].forEach(item => {
+            item.classList.add('nav__item_open');
+        })
+    }
+
+    closeThird() {
+        [...this.activeThirdItems].forEach(item => {
+            item.classList.remove('nav__item_open');
+        })
+
+        this.activeThirdItems = null;
+        this.activeThirdBox.checked = false;
+        this.activeThirdBox = null;
+
+        // НУЖНО ПРОВЕРЯТЬ ТРЕТИЙ УРОВЕНЬ ОТДЕЛЬНЫЙ МЕТОД НАПИСАТЬ
+    }
+    // Конец открытие закрытие подменю 3 уровня
 
 
     // на третий уровень будем ставить атрибут open

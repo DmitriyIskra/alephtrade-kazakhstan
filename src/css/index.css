@@ -203,6 +203,12 @@
     display: block;
     height: 2.08vw;
     width: 2.23vw;
+
+    transition: filter 0.17s linear;
+}
+
+.main-page__article-link > svg:hover {
+    filter: drop-shadow(0px 0px 10.9px #009EFF);
 }
 
 /* ----------======== END СТАТЬИ С ИЗОБРАЖЕНИЯМИ =======---------- */
@@ -342,6 +348,10 @@
     .main-page__article-link > svg {
         height: 10.93vw;
         width: 10.93vw;
+    }
+
+    .main-page__article-link > svg:hover {
+        filter: none;
     }
 }
 

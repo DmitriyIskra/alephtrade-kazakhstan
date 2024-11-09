@@ -402,7 +402,7 @@
         overflow: hidden;
     }
 
-    .nav__mobile-link-item {
+    .nav__mobile-link-item a {
         display: flex;
         width: 100%;
         padding-left: 7.20vw;
@@ -412,8 +412,6 @@
         font-weight: 400;
 
         color: #555;
-
-        overflow: hidden;
     }
 }
 
@@ -423,5 +421,9 @@
 
         border-bottom: 1px solid #268351;
     }
+
+    .nav__item_open.nav__mobile-item:first-child {
+        border-top: 0.54vw solid #268351;
+    } 
 }
 

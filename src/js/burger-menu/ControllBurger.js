@@ -36,6 +36,9 @@ export default class ControllBurger {
             this.d.controllSecond(checkbox);
         }
 
-
+        if(e.target.closest('.nav__second-level')) {
+            const checkbox = e.target;
+            this.d.controllThird(checkbox);
+        }
     }
 }
