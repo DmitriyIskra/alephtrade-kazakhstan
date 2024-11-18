@@ -80,9 +80,9 @@ module.exports = {
             // title: '....' // здесь можно указать title конкретной страницы
             template: './src/pug/index.pug',
             filename: './index.html',   // куда компилировать
-            // minify: {
-            //   html: false // отключаем минификацию html, еще есть версия minify: false
-            // },
+            minify: {
+              html: false // отключаем минификацию html, еще есть версия minify: false
+            },
             scriptLoading: 'blocking', // defer | module. можно также указать inject: 'body' скрипт будет в конце body но с defer
         }),
         new miniCss({
@@ -92,19 +92,20 @@ module.exports = {
             // title: '....' // здесь можно указать title конкретной страницы
             template: './src/pug/contacts.pug',
             filename: './contacts.html',   // куда компилировать
-            // minify: {
-            //   html: false // отключаем минификацию html, еще есть версия minify: false
-            // },
+            minify: {
+              html: false // отключаем минификацию html, еще есть версия minify: false
+            },
             scriptLoading: 'blocking', // defer | module. можно также указать inject: 'body' скрипт будет в конце body но с defer
         }),
         new miniCss({
             filename: 'css/style.css',
         }),
-        // new CopyWebpackPlugin({
-        //   patterns: [  
-            
-        //   ],
-        // }),
+        new CopyWebpackPlugin({
+          patterns: [  
+            { from: 'src/sendmail/sendmail.php', to: 'sendmail/sendmail.php' },
+            { from: 'src/sendmail/mail.php', to: 'sendmail/mail.php' },
+          ],
+        }),
         // new ImageminWebpWebpackPlugin({
         //   config: [{
         //     test: /.(jpe?g|png)/,

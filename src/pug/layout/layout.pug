@@ -13,9 +13,12 @@ html(lang='ru')
 
     title #{pageTitle}
   body
+
     .wrapper-page(class=`wrapper-${pageName}`) 
         include ../components/header
 
         block content 
+        
 
         include ../components/footer
+        

@@ -1,7 +1,11 @@
 footer {
+    position: relative;
+
     --column-padding-first: 9.58vw;
     --column-padding-second: 5.83vw;
     --column-padding-third: 12.14vw;
+
+    z-index: 5;
 }
 
 .footer {
@@ -89,7 +93,6 @@ footer {
 .footer__wrapper-address {
     grid-column: 3;
     grid-row: 4;
-    margin-top: 4.45vw;
     padding-left: var(--column-padding-third);
 }
 
@@ -174,7 +177,6 @@ footer {
 .footer__social-list {
     display: flex;
     gap: 1.20vw;
-    margin-top: 1.35vw;
 }
 
 .footer__social-item {
