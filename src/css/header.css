@@ -71,8 +71,6 @@
 
 .header__social-email {
     height: 1.3vw;
-
-    cursor: pointer;
 }
 
 .header__social-icon a {
@@ -84,7 +82,7 @@
     width: 100%;
 }
 
-.header__tel_mobile {
+.header__communication_mobile {
     display: none;
 }
 
@@ -280,6 +278,8 @@
     .header__logo {
         height: 12.80vw;
         width: 12.80vw;
+
+        transform: translateX(50%);
     }
 
     .header__logo img {
@@ -294,12 +294,24 @@
 }
 
 @media(max-width: 961px) {
+    .header__communication_mobile {
+        display: flex;
+        height: 8vw;
+        gap: 4vw;
+        align-items: center;
+    }
+
+    .header__social-email {
+        width: 8vw;
+        height: 5.5vw;
+    }
+
     .header__tel_mobile {
         position: relative;
 
-        display: block;
+        display: flex;
         width: 8vw;
-        height: 8vw;
+        align-items: center;
     }
 
     .header__tel_mobile a {

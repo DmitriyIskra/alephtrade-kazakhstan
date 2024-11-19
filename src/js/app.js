@@ -9,6 +9,12 @@ import sliderBanners from "./slider-banners/sliderBanners";
 import ControllBurger from "./burger-menu/ControllBurger";
 import RedrawBurger from "./burger-menu/RedrawBurger";
 
+// Форма обратной связи
+import ControllCallback from "./callback/ControllCallback";
+import RedrawCallback from "./callback/RedrawCallback";
+import ApiCallback from "./callback/ApiCallback";
+
+
 // Слайдер бренды
 const brands = document.querySelector('.brands');
 if(brands) sliderBrands(Swiper, brands, [Autoplay]);
@@ -24,6 +30,15 @@ if(navMobile) {
 
     const redraw = new RedrawBurger(navMobile, switcher, boxes);
     const controll = new ControllBurger(redraw);
+    controll.init();
+}
+
+// Форма обратной связи
+const form = document.querySelector('.callback__form');
+if(form) {
+    const redraw = new RedrawCallback(form);
+    const api = new ApiCallback();
+    const controll = new ControllCallback(redraw, api);
     controll.init();
 }
 

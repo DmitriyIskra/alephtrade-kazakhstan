@@ -1,8 +1,10 @@
-.callback__cover
+#callback__cover.callback__cover
+    a.callback__cover-link(href="#0")
     .callback__wr-form
         .callback__wr-close-form 
             .callback__close-form 
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                a.callback__close-link(href="#0")
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none">
                     <path d="M19.1307 14.6459L18.7771 14.9994L19.1306 15.353L28.7174 24.9405L28.7175 24.9405C29.7608 25.9838 29.7609 27.6741 28.7174 28.7175L28.7174 28.7175C27.6741 29.7608 25.9837 29.7608 24.9403 28.7175L24.5868 29.071L24.9403 28.7175L15.3536 19.1311L15 18.7775L14.6465 19.1311L5.05968 28.7175L5.41323 29.071L5.05968 28.7175C4.01631 29.7608 2.3259 29.7608 1.28253 28.7175L1.28252 28.7175C0.239165 27.6742 0.239156 25.9839 1.28252 24.9405L10.8693 15.3541L11.2229 15.0005L10.8693 14.647L1.28252 5.06055C0.239159 4.01723 0.239159 2.32691 1.28252 1.28358C2.32589 0.240245 4.01631 0.240245 5.05968 1.28358L14.6465 10.87L15 11.2236L15.3536 10.87L24.9403 1.28249C24.9403 1.28249 24.9403 1.28249 24.9403 1.28248C25.9837 0.239173 27.6741 0.239167 28.7174 1.2825L29.0703 0.929647L28.7174 1.28251C29.7609 2.32583 29.7609 4.01615 28.7174 5.05947L29.071 5.41304L28.7174 5.05948L19.1307 14.6459Z" fill="#555555" stroke="white"/>
                 </svg>
         header.callback__header
@@ -11,25 +13,32 @@
                 span и мы ответим на Ваши вопросы удобным для Вас способом
         form.callback__form(name="callback") 
             .callback__wr-input 
-                label.callback__label 
+                label.callback__label
                     span.callback__label-name Имя
-                    input.callback__input(type="text" name="name")
+                    input.callback__input(type="text" name="name" maxlength="68")
             .callback__wr-input 
                 label.callback__label
                     span.callback__label-name Телефон
-                    input.callback__input(type="text" name="phone" )
+                    input.callback__input(type="text" name="phone"  maxlength="68")
             .callback__wr-input 
                 label.callback__label
                     span.callback__label-name Почта
-                    input.callback__input(type="text" name="email")
+                    input.callback__input(type="text" name="email"  maxlength="68")
             .callback__wr-input 
                 label.callback__label 
                     span.callback__label-name Город
-                    input.callback__input(type="text" name="city")
+                    input.callback__input(type="text" name="city"  maxlength="68")
             .callback__wr-input 
                 label.callback__label 
                     span.callback__label-name Текст сообщения 
                     textarea.callback__input.callback__message(name="message")
+
             .callback__note Все поля обязательны для заполнения
+
+            .callback__wr-consent 
+                label.callback__consent-label
+                    input.callback__consent-box(type="checkbox" name="consent") 
+                    span.callback__consent-text Согласие на обработку персональных данных
+            
             .callback__wr-submit 
                 button.callback__submit Отправить
