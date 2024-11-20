@@ -103,12 +103,14 @@ module.exports = {
         new miniCss({
             filename: 'css/style.css',
         }),
-        // new CopyWebpackPlugin({
-        //   patterns: [  
-            // { from: 'src/sendmail/sendmail.php', to: 'sendmail/sendmail.php' },
-            // { from: 'src/sendmail/mail.php', to: 'sendmail/mail.php' },
-        //   ],
-        // }),
+        new CopyWebpackPlugin({
+          patterns: [  
+            { from: 'src/img/favicon/apple-touch-icon.png', to: 'img/favicon' },
+            { from: 'src/img/favicon/32.png', to: 'img/favicon' },
+            { from: 'src/img/favicon/16.png', to: 'img/favicon' },
+            { from: 'src/favicon.ico', to: './' },
+          ],
+        }),
         // new ImageminWebpWebpackPlugin({
         //   config: [{
         //     test: /.(jpe?g|png)/,
