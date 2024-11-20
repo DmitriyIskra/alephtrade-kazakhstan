@@ -9,6 +9,9 @@ module.exports = {
     devServer: {
         port: 8800,
     },
+    optimization: {
+      minimize: false
+    },
     devtool: 'source-map',
     output: {
         path: __dirname + '/dist',
@@ -100,12 +103,12 @@ module.exports = {
         new miniCss({
             filename: 'css/style.css',
         }),
-        new CopyWebpackPlugin({
-          patterns: [  
-            { from: 'src/sendmail/sendmail.php', to: 'sendmail/sendmail.php' },
-            { from: 'src/sendmail/mail.php', to: 'sendmail/mail.php' },
-          ],
-        }),
+        // new CopyWebpackPlugin({
+        //   patterns: [  
+            // { from: 'src/sendmail/sendmail.php', to: 'sendmail/sendmail.php' },
+            // { from: 'src/sendmail/mail.php', to: 'sendmail/mail.php' },
+        //   ],
+        // }),
         // new ImageminWebpWebpackPlugin({
         //   config: [{
         //     test: /.(jpe?g|png)/,

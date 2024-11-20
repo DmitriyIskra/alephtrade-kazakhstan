@@ -14,15 +14,16 @@ export default class ControllCallback {
     }
 
     registerEvents() {
+        this.d.closeLinkCover.addEventListener('click', this.click);
+        this.d.closeButton.addEventListener('click', this.click);
         this.d.form.addEventListener('submit', this.submit);
-        // this.d.form.addEventListener('click', this.click);
         this.d.textArea.addEventListener('focus', this.focus);
         [...this.d.inputs].forEach(input => input.addEventListener('focus', this.focus));
         this.d.checkbox.addEventListener('change', this.change);
     }
 
     click(e) {
-        console.log('click')
+        this.d.resetForm();
     }
 
     submit(e) {
@@ -54,7 +55,9 @@ export default class ControllCallback {
         if(validTotal > 0) return;
 
         const formData = new FormData(this.d.form);
-        this.api.create(formData);
+
+        const response = this.api.create(formData);
+        response ? this.d.resultResponse('successfull') : this.d.resultResponse('fail');
     }
 
     focus(e) {

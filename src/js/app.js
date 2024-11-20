@@ -36,7 +36,9 @@ if(navMobile) {
 // Форма обратной связи
 const form = document.querySelector('.callback__form');
 if(form) {
-    const redraw = new RedrawCallback(form);
+    const coverCloseLink = document.querySelector('.callback__cover-link');
+    const closeButton = document.querySelector('.callback__close-link');
+    const redraw = new RedrawCallback(form, coverCloseLink, closeButton);
     const api = new ApiCallback();
     const controll = new ControllCallback(redraw, api);
     controll.init();
