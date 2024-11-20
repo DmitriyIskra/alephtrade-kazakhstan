@@ -103,6 +103,8 @@
 
 
 .nav__item {
+    position: relative;
+
     padding-top: 1.04vw;
     padding-bottom: 1.04vw;
 
@@ -115,7 +117,13 @@
     cursor: pointer;
 }
 
-.nav__item > a {
+.nav__item-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
     color: inherit;
 }
 
