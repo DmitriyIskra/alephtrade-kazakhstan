@@ -23,6 +23,7 @@ if(brands) sliderBrands(Swiper, brands, [Autoplay]);
 const banners = document.querySelector('.slider-banners');
 if(banners) sliderBanners(Swiper, banners, [Navigation, Autoplay]);
 
+// Бургер меню
 const navMobile = document.querySelector('.nav__mobile-list');
 if(navMobile) {
     const switcher = document.querySelector('.nav__switcher-checkbox');
